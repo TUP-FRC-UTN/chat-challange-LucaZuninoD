@@ -1,0 +1,6 @@
+<h5>Conversación</h5>
+<div class="bg-light p-2 mb-3 conversation-box">
+  <p *ngFor="let message of messages">
+    <strong>{{ message.user }}</strong> ({{ message.time }}): {{ message.text }}
+  </p>
+</div>

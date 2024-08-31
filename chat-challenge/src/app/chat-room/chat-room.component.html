@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">Sala de Chat</div>
+  <div class="card-body">
+    <app-conversation [messages]="messages"></app-conversation>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <app-user-message [userName]="'Pepe'" (onSendMessage)="addMessage($event)"></app-user-message>
+      </div>
+      <div class="col-md-6">
+        <app-user-message [userName]="'Maria'" (onSendMessage)="addMessage($event)"></app-user-message>
+      </div>
+    </div>
+  </div>
+</div>
